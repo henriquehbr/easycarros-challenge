@@ -1,10 +1,45 @@
 {
+  "name": "easycarros-challenge",
+  "version": "0.0.0",
+  "keywords": [
+    "easycarros",
+    "challenge"
+  ],
+  "author": "Henrique Borges <henriqueborgeshbr@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henriquehbr/easycarros-challenge"
+  },
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1",
+    "bump:patch": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --patch",
+    "bump:minor": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --minor",
+    "bump:major": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --major",
+    "version": "yarn changelog -p",
+    "postversion": "yes \"\" | yarn publish",
+    "changelog": "auto-changelog --template keepachangelog -l false --hide-credit",
+    "postchangelog": "git add CHANGELOG.md",
+    "amend-changelog": "cross-env HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit --no-verify"
+  },
+  "husky": {
+    "hooks": {
+      "post-commit": "yarn-changelog -u && yarn amend-changelog",
+      "pre-push": "cross-env HUSKY_SKIP_HOOKS=1 git push --tags"
+    }
   },
   "devDependencies": {
-    "snowpack": "^3.0.1"
+    "@snowpack/plugin-svelte": "^3.5.2",
+    "auto-changelog": "^2.2.1",
+    "cross-env": "^7.0.3",
+    "husky": "^4.3.8",
+    "snowpack": "^3.0.11",
+    "svelte": "^3.31.2"
+  },
+  "dependencies": {
+    "svelte-loadable": "^1.5.1",
+    "tinro": "^0.5.8"
   }
 }

@@ -1,0 +1,17 @@
+:root {
+  --primary-blue: #0c5c8c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+}

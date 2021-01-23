@@ -14,7 +14,6 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1",
     "bump:patch": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --patch",
     "bump:minor": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --minor",
     "bump:major": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --major",

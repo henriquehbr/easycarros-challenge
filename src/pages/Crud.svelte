@@ -3,12 +3,11 @@
   import AddServiceForm from '@components/AddServiceForm.svelte'
   import Table from '@components/Table.svelte'
 
-  const updateServices = event => {
-    serviceStore.update(services => [...services, event.detail])
-    console.log($serviceStore)
-  }
+  const addService = event => serviceStore.update(services => [...services, event.detail])
+  const removeService = event =>
+    serviceStore.update(services => services.filter((service, index) => index !== event.detail))
 </script>
 
-<AddServiceForm on:addService={updateServices} />
-<Table serviceStore={$serviceStore} />
+<AddServiceForm on:addService={addService} />
+<Table on:removeService={removeService} serviceStore={$serviceStore} />
 

@@ -1,7 +1,10 @@
 <script>
+  import { createEventDispatcher } from 'svelte'
   import Button from '@components/Button.svelte'
   import checkIcon from '@assets/check-icon.svg'
   import exitIcon from '@assets/exit-icon.svg'
+
+  const dispatch = createEventDispatcher()
 
   export let serviceStore
 </script>
@@ -79,14 +82,14 @@
           <td align='center' colspan='5'>Nenhum serviço agendado!</td>
         </tr>
       {:else}
-        {#each serviceStore as service}
+        {#each serviceStore as service, index}
           <tr>
             <td class='service-name'>{service.serviceName}</td>
             <td>{service.executionDate || '---'}</td>
             <td>{service.scheduledDate}</td>
             <td class='vehicle-plate'>{service.vehiclePlate}</td>
             <td class='action-buttons'>
-              <Button small secondary color='red'>
+              <Button on:click={() => dispatch('removeService', index)} small secondary color='red'>
                 <img src={exitIcon} alt='Exit icon'>
                 Excluir
               </Button>

@@ -1,6 +1,8 @@
 <script>
   import { Route, router } from 'tinro'
   import Loadable from 'svelte-loadable'
+
+  router.mode.hash()
 </script>
 
 <Route path="/">

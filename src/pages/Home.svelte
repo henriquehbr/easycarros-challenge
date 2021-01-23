@@ -5,15 +5,11 @@
 
 <style>
   .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    height: 100%;
     max-width: 600px;
     width: 100%;
-    margin: 0 auto;
+    margin: auto;
+    padding: 1.5rem;
   }
 
   .main-container img {

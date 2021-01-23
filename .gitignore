@@ -1,5 +1,3 @@
 .snowpack
 build
 node_modules
-public/assets/*
-!public/assets/easy-carros-logo.png

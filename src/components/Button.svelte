@@ -1,8 +1,12 @@
 <script>
   import { createEventDispatcher } from 'svelte'
+  import Loadable from 'svelte-loadable'
 
   export let primary = false
   export let secondary = false
+  export let small = false
+  export let ripple = true
+  export let color = ''
 
   const dispatch = createEventDispatcher()
 </script>
@@ -14,21 +18,38 @@
     border-radius: 1.5rem;
     cursor: pointer;
     font-family: 'Montserrat';
-    font-size: 1.125rem;
+    font-size: 1rem;
     outline: none;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  button.small {
+    padding: 0.5rem 1.75rem;
   }
 
   button.primary {
     background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
     color: white;
   }
 
   button.secondary {
+    color: var(--color);
+    border-color: var(--color);
     background-color: transparent;
-    color: var(--primary-blue);
   }
 </style>
 
-<button on:click={() => dispatch('click')} class:primary class:secondary>
+<button
+  style={`--color: ${color || '#0c5c8c'}`}
+  on:click={() => dispatch('click')}
+  class:primary
+  class:secondary
+  class:small
+>
   <slot />
+  {#if ripple}
+    <Loadable loader={() => import('svelte-mui/src/Ripple.svelte')} />
+  {/if}
 </button>

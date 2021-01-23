@@ -524,6 +524,11 @@ svelte-loadable@^1.5.1:
   resolved "https://registry.yarnpkg.com/svelte-loadable/-/svelte-loadable-1.5.1.tgz#0048e740a386f1826e5ab88cdfde943fbd3fcb7f"
   integrity sha512-vQd9Wj4wfEuMF/LkbYkqyGbgNkeVOURIPHWhPtC4Cxds0g/2jUFPRdjbMs/gji4bj30B87GubrkQgRf8xItw5g==
 
+svelte-mui@^0.3.3-7:
+  version "0.3.3-7"
+  resolved "https://registry.yarnpkg.com/svelte-mui/-/svelte-mui-0.3.3-7.tgz#d53bc1e3c03c894d956df64fdd00acbeb80c8c1b"
+  integrity sha512-8s6U5ijDNpP7ojxG4UxTZ1tNUgjKRa30SeKd5vxG/MyIpLpI43Pr2bK+6lhbPX2UAYengyo0GSXFuA5V0oEboQ==
+
 svelte-preprocess@^4.6.0:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.6.1.tgz#a7de4d91b32d5608b6637da960ee81e6089ae276"

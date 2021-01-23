@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Commits
 
 - style(table): make table scrollable on smaller screens [`ae5b5f2`](https://github.com/henriquehbr/easycarros-challenge/commit/ae5b5f2dcac293ce4017e0530ce22ee621eed6a4)
-- style(table): widen table and emphasize [`f038022`](https://github.com/henriquehbr/easycarros-challenge/commit/f03802290d3949042c6cea19bf225bfafadec5b4)
+- chore(AddServiceForm): setup form reset and submit [`6141eba`](https://github.com/henriquehbr/easycarros-challenge/commit/6141eba6f4e919534699128cec465a2de6ba70e6)
+- style(table): widen table and emphasize [`409c1ff`](https://github.com/henriquehbr/easycarros-challenge/commit/409c1ffa948bd1be506b886654409df8b6e0bcab)
 
 ## v0.1.0 - 2021-01-23
 

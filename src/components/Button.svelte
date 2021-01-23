@@ -7,6 +7,8 @@
   export let small = false
   export let ripple = true
   export let color = ''
+  export let type = 'button'
+  export let form = ''
 
   const dispatch = createEventDispatcher()
 </script>
@@ -42,6 +44,8 @@
 </style>
 
 <button
+  {type}
+  {form}
   style={`--color: ${color || '#0c5c8c'}`}
   on:click={() => dispatch('click')}
   class:primary

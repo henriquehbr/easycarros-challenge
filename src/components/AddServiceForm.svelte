@@ -58,15 +58,15 @@
 <div class='add-container'>
   <h3>Nova ordem de serviço</h3>
   <p>Os campos com * são obrigatórios</p>
-  <form>
-    <Textfield label='Serviço*' />
-    <Datefield readonly locale='pt-br' label='Data de nascimento*' format='DD/MM/YYYY' />
-    <Textfield label='Placa*' />
+  <form id='add-service-form' on:submit={() => console.log('Hello World!')}>
+    <Textfield required label='Serviço*' />
+    <Datefield required readonly locale='pt-br' label='Data de nascimento*' format='DD/MM/YYYY' />
+    <Textfield required label='Placa*' />
   </form>
   <div class='buttons-container'>
-    <Button secondary>
+    <Button type='reset' form='add-service-form' secondary>
       Cancelar
     </Button>
-    <Button primary>Adicionar</Button>
+    <Button type='submit' form='add-service-form' primary>Adicionar</Button>
   </div>
 </div>

@@ -9,7 +9,7 @@
     flex-direction: column;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
     padding: 24px;
-    max-width: 1024px;
+    max-width: 1200px;
     width: 100%;
     margin-bottom: 64px;
   }

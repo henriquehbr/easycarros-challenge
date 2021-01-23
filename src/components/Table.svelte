@@ -7,12 +7,14 @@
 <style>
   .table-container {
     overflow: auto;
-    max-width: 1024px;
+    max-width: 1200px;
     width: 100%;
   }
 
   table {
     border-spacing: 0 1em;
+    padding: 8px;
+    width: 100%;
   }
 
   thead {

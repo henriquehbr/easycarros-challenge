@@ -27,7 +27,7 @@
   }
 
   button.small {
-    padding: 0.5rem 1.75rem;
+    padding: 0.5rem 1rem;
   }
 
   button.primary {

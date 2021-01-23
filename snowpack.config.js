@@ -10,7 +10,8 @@ module.exports = {
   alias: {
     '@components': './src/components',
     '@pages': './src/pages',
-    '@assets': './public/assets'
+    '@assets': './public/assets',
+    '@src': './src'
   },
   routes: [{ match: 'routes', src: '.*', dest: '/index.html' }],
   optimize: {

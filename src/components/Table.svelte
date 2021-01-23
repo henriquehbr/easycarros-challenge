@@ -2,6 +2,8 @@
   import Button from '@components/Button.svelte'
   import checkIcon from '@assets/check-icon.svg'
   import exitIcon from '@assets/exit-icon.svg'
+
+  export let serviceStore
 </script>
 
 <style>
@@ -72,54 +74,30 @@
       <td></td>
     </thead>
     <tbody>
-      <tr>
-        <td class='service-name'>Lavagem ecológica</td>
-        <td>---</td>
-        <td>20/08/2020</td>
-        <td class='vehicle-plate'>MBB-1996</td>
-        <td class='action-buttons'>
-          <Button small secondary color='red'>
-            <img src={exitIcon} alt='Exit icon'>
-            Excluir
-          </Button>
-          <Button small secondary color='limegreen'>
-            <img src={checkIcon} alt='Check icon' />
-            Finalizar
-          </Button>
-        </td>
-      </tr>
-      <tr>
-        <td class='service-name'>Martelinho de Ouro</td>
-        <td>04/08/2020</td>
-        <td>04/08/2020</td>
-        <td class='vehicle-plate'>MAR-1993</td>
-        <td class='action-buttons'>
-          <Button small secondary color='red'>
-            <img src={exitIcon} alt='Exit icon'>
-            Excluir
-          </Button>
-          <Button small secondary color='limegreen'>
-            <img src={checkIcon} alt='Check icon' />
-            Finalizar
-          </Button>
-        </td>
-      </tr>
-      <tr>
-        <td class='service-name'>Higienização completa</td>
-        <td>30/07/2020</td>
-        <td>30/07/2020</td>
-        <td class='vehicle-plate'>URL-2020</td>
-        <td class='action-buttons'>
-          <Button small secondary color='red'>
-            <img src={exitIcon} alt='Exit icon'>
-            Excluir
-          </Button>
-          <Button small secondary color='limegreen'>
-            <img src={checkIcon} alt='Check icon' />
-            Finalizar
-          </Button>
-        </td>
-      </tr>
+      {#if serviceStore.length < 1}
+        <tr>
+          <td align='center' colspan='5'>Nenhum serviço agendado!</td>
+        </tr>
+      {:else}
+        {#each serviceStore as service}
+          <tr>
+            <td class='service-name'>{service.serviceName}</td>
+            <td>{service.executionDate || '---'}</td>
+            <td>{service.scheduledDate}</td>
+            <td class='vehicle-plate'>{service.vehiclePlate}</td>
+            <td class='action-buttons'>
+              <Button small secondary color='red'>
+                <img src={exitIcon} alt='Exit icon'>
+                Excluir
+              </Button>
+              <Button small secondary color='limegreen'>
+                <img src={checkIcon} alt='Check icon' />
+                Finalizar
+              </Button>
+            </td>
+          </tr>
+        {/each}
+      {/if}
     </tbody>
   </table>
 </div>

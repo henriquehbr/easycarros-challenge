@@ -1,6 +1,22 @@
 <script>
+  import { createEventDispatcher } from 'svelte'
   import { Textfield, Datefield } from 'svelte-mui/src'
   import Button from '@components/Button.svelte'
+
+  const dispatch = createEventDispatcher()
+
+  let addServiceForm
+
+  let serviceName
+  let scheduledDate
+  let vehiclePlate
+
+  $: serviceData = { serviceName, scheduledDate, vehiclePlate }
+
+  const addService = () => {
+    dispatch('addService', serviceData)
+    addServiceForm.reset()
+  }
 </script>
 
 <style>
@@ -58,10 +74,10 @@
 <div class='add-container'>
   <h3>Nova ordem de serviço</h3>
   <p>Os campos com * são obrigatórios</p>
-  <form id='add-service-form' on:submit={() => console.log('Hello World!')}>
-    <Textfield required label='Serviço*' />
-    <Datefield required readonly locale='pt-br' label='Data de nascimento*' format='DD/MM/YYYY' />
-    <Textfield required label='Placa*' />
+  <form bind:this={addServiceForm} id='add-service-form' on:submit|preventDefault={addService}>
+    <Textfield bind:value={serviceName} required label='Serviço' />
+    <Datefield bind:value={scheduledDate} required readonly locale='pt-br' label='Data de agendamento' format='DD/MM/YYYY' />
+    <Textfield bind:value={vehiclePlate} required label='Placa' />
   </form>
   <div class='buttons-container'>
     <Button type='reset' form='add-service-form' secondary>

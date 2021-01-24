@@ -10,9 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Commits
 
 - style(table): make table scrollable on smaller screens [`ae5b5f2`](https://github.com/henriquehbr/easycarros-challenge/commit/ae5b5f2dcac293ce4017e0530ce22ee621eed6a4)
-- chore(store): implement store-based data insertion [`a63a963`](https://github.com/henriquehbr/easycarros-challenge/commit/a63a963f5fdc6870c0a66832f27aebcdfc28635b)
+- refactor(serviceStore): move CRUD methods to store [`0969c42`](https://github.com/henriquehbr/easycarros-challenge/commit/0969c42c4e49b373dcde21c61e0dd45450c6d709)
+- feat(Crud): implement service insertion [`c512186`](https://github.com/henriquehbr/easycarros-challenge/commit/c5121867ebee8c766341379fe86b09998f199b1a)
+- feat(Crud): implement service removal [`35e2e14`](https://github.com/henriquehbr/easycarros-challenge/commit/35e2e1470e460bfc6f8d60a319f8c4e9c95c0ccb)
 - chore(AddServiceForm): setup form reset and submit [`54a3fa0`](https://github.com/henriquehbr/easycarros-challenge/commit/54a3fa06723ed73d8bec4d1c8b4d30b718304f4f)
-- feat(Crud): implement service removal [`c4b5705`](https://github.com/henriquehbr/easycarros-challenge/commit/c4b5705490a0edf4f71c42a36ae5a5eae9f410d9)
 - style(table): widen table and emphasize [`409c1ff`](https://github.com/henriquehbr/easycarros-challenge/commit/409c1ffa948bd1be506b886654409df8b6e0bcab)
 
 ## v0.1.0 - 2021-01-23

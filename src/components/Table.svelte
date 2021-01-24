@@ -1,12 +1,11 @@
 <script>
-  import { createEventDispatcher } from 'svelte'
+  import { serviceStore, deleteService } from '@src/serviceStore'
   import Button from '@components/Button.svelte'
+  import CloseServiceDialog from '@components/CloseServiceDialog.svelte'
   import checkIcon from '@assets/check-icon.svg'
   import exitIcon from '@assets/exit-icon.svg'
 
-  const dispatch = createEventDispatcher()
-
-  export let serviceStore
+  let dialogVisible = false
 </script>
 
 <style>
@@ -77,23 +76,24 @@
       <td></td>
     </thead>
     <tbody>
-      {#if serviceStore.length < 1}
+      {#if $serviceStore.length < 1}
         <tr>
           <td align='center' colspan='5'>Nenhum serviço agendado!</td>
         </tr>
       {:else}
-        {#each serviceStore as service, index}
+        {#each $serviceStore as service, serviceIndex}
+          <CloseServiceDialog {serviceIndex} bind:visible={dialogVisible} />
           <tr>
             <td class='service-name'>{service.serviceName}</td>
             <td>{service.executionDate || '---'}</td>
             <td>{service.scheduledDate}</td>
             <td class='vehicle-plate'>{service.vehiclePlate}</td>
             <td class='action-buttons'>
-              <Button on:click={() => dispatch('removeService', index)} small secondary color='red'>
+              <Button small secondary color='red' on:click={() => deleteService(serviceIndex)}>
                 <img src={exitIcon} alt='Exit icon'>
                 Excluir
               </Button>
-              <Button small secondary color='limegreen'>
+              <Button small secondary color='limegreen' on:click={() => (dialogVisible = true)}>
                 <img src={checkIcon} alt='Check icon' />
                 Finalizar
               </Button>

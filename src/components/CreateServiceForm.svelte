@@ -1,22 +1,35 @@
 <script>
-  import { createEventDispatcher } from 'svelte'
+  import { afterUpdate } from 'svelte'
   import { Textfield, Datefield } from 'svelte-mui/src'
+  import { createService } from '@src/serviceStore'
   import Button from '@components/Button.svelte'
 
-  const dispatch = createEventDispatcher()
+  // Elements
+  let createServiceForm
 
-  let addServiceForm
-
+  // Field values
   let serviceName
   let scheduledDate
   let vehiclePlate
 
+  let allowSubmit = false
+
   $: serviceData = { serviceName, scheduledDate, vehiclePlate }
 
-  const addService = () => {
-    dispatch('addService', serviceData)
-    addServiceForm.reset()
+  const validateFormFields = () => {
+    const serviceNameFulfilled = serviceName.length > 0
+    const scheduledDateFulfilled = /^\d{2}\/\d{2}\/\d{4}$/.test(scheduledDate)
+    const vehiclePlateFulfilled = /^[a-zA-Z]{3}\-\d{4}$/.test(vehiclePlate)
+    const allFieldsFulfilled = serviceNameFulfilled && scheduledDateFulfilled && vehiclePlateFulfilled
+    allowSubmit = allFieldsFulfilled ? true : false
   }
+
+  const submitForm = () => {
+    createService(serviceData)
+    createServiceForm.reset()
+  }
+
+  afterUpdate(validateFormFields)
 </script>
 
 <style>
@@ -74,15 +87,22 @@
 <div class='add-container'>
   <h3>Nova ordem de serviço</h3>
   <p>Os campos com * são obrigatórios</p>
-  <form bind:this={addServiceForm} id='add-service-form' on:submit|preventDefault={addService}>
+  <form bind:this={createServiceForm} id='add-service-form' on:submit|preventDefault={submitForm}>
     <Textfield bind:value={serviceName} required label='Serviço' />
-    <Datefield bind:value={scheduledDate} required readonly locale='pt-br' label='Data de agendamento' format='DD/MM/YYYY' />
+    <Datefield
+      bind:value={scheduledDate}
+      readonly
+      required
+      locale='pt-br'
+      label='Data de agendamento'
+      format='DD/MM/YYYY'
+    />
     <Textfield bind:value={vehiclePlate} required label='Placa' />
   </form>
   <div class='buttons-container'>
-    <Button type='reset' form='add-service-form' secondary>
+    <Button secondary type='reset' form='add-service-form'>
       Cancelar
     </Button>
-    <Button type='submit' form='add-service-form' primary>Adicionar</Button>
+    <Button primary disabled={!allowSubmit} type='submit' form='add-service-form'>Adicionar</Button>
   </div>
 </div>

@@ -5,6 +5,7 @@
   export let primary = false
   export let secondary = false
   export let small = false
+  export let disabled = false
   export let ripple = true
   export let color = ''
   export let type = 'button'
@@ -41,11 +42,17 @@
     border-color: var(--color);
     background-color: transparent;
   }
+
+  button[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 </style>
 
 <button
   {type}
   {form}
+  {disabled}
   style={`--color: ${color || '#0c5c8c'}`}
   on:click={() => dispatch('click')}
   class:primary

@@ -14,7 +14,7 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "deploy": "yarn build && gh-pages -d build -m 'Automated deploy'",
+    "deploy": "yarn build && gh-pages -d build -m \"Automated deploy\"",
     "bump:patch": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --patch",
     "bump:minor": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --minor",
     "bump:major": "cross-env HUSKY_SKIP_HOOKS=1 yarn version --major",

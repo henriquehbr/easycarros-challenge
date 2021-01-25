@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Commits
 
-- chore: add deploy script [`b637c17`](https://github.com/henriquehbr/easycarros-challenge/commit/b637c17855f5910deca93bf3d8acb296e56b6b83)
+- chore: add deploy script [`5a33c95`](https://github.com/henriquehbr/easycarros-challenge/commit/5a33c9526680aa4544d777921f7c4e14f4381763)
+- chore: fix deploy commit message [`8c25e7a`](https://github.com/henriquehbr/easycarros-challenge/commit/8c25e7ac3b32a7006b011ca05f69e1000a529866)
 
 ## [v0.3.0](https://github.com/henriquehbr/easycarros-challenge/compare/v0.2.0...v0.3.0) - 2021-01-25
 

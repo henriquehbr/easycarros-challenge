@@ -425,14 +425,14 @@
         "dist/pages/Home.svelte.css": {
           "bytesInOutput": 426
         },
+        "dist/components/Button.svelte.css": {
+          "bytesInOutput": 508
+        },
         "dist/components/CreateServiceForm.svelte.css": {
           "bytesInOutput": 672
         },
         "dist/components/Table.svelte.css": {
           "bytesInOutput": 917
-        },
-        "dist/components/Button.svelte.css": {
-          "bytesInOutput": 508
         },
         "dist/components/CloseServiceDialog.svelte.css": {
           "bytesInOutput": 126

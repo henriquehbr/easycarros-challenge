@@ -5,12 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/henriquehbr/easycarros-challenge/compare/v0.1.0...HEAD)
+## [v0.2.0](https://github.com/henriquehbr/easycarros-challenge/compare/v0.1.0...v0.2.0)
 
 ### Commits
 
 - style(table): make table scrollable on smaller screens [`ae5b5f2`](https://github.com/henriquehbr/easycarros-challenge/commit/ae5b5f2dcac293ce4017e0530ce22ee621eed6a4)
-- refactor(serviceStore): move CRUD methods to store [`0969c42`](https://github.com/henriquehbr/easycarros-challenge/commit/0969c42c4e49b373dcde21c61e0dd45450c6d709)
+- refactor(serviceStore): move CRUD methods to store [`cec2f29`](https://github.com/henriquehbr/easycarros-challenge/commit/cec2f29cf7815b6cde018b1bc1abe5bdd69f9a30)
 - feat(Crud): implement service insertion [`c512186`](https://github.com/henriquehbr/easycarros-challenge/commit/c5121867ebee8c766341379fe86b09998f199b1a)
 - feat(Crud): implement service removal [`35e2e14`](https://github.com/henriquehbr/easycarros-challenge/commit/35e2e1470e460bfc6f8d60a319f8c4e9c95c0ccb)
 - chore(AddServiceForm): setup form reset and submit [`54a3fa0`](https://github.com/henriquehbr/easycarros-challenge/commit/54a3fa06723ed73d8bec4d1c8b4d30b718304f4f)

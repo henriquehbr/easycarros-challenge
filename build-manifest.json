@@ -1,0 +1,444 @@
+{
+  "inputs": {
+    "global.css": {
+      "bytes": 567,
+      "imports": []
+    },
+    "_snowpack/env.js": {
+      "bytes": 97,
+      "imports": []
+    },
+    "_snowpack/pkg/common/index-2a8644aa.js": {
+      "bytes": 29301,
+      "imports": []
+    },
+    "_snowpack/pkg/svelte/internal.js": {
+      "bytes": 570,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-2a8644aa.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/common/index-4bf1acee.js": {
+      "bytes": 1782,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-2a8644aa.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/tinro.js": {
+      "bytes": 9098,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-2a8644aa.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-4bf1acee.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/svelte-loadable.js": {
+      "bytes": 16048,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-2a8644aa.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/Home.svelte.css": {
+      "bytes": 427,
+      "imports": []
+    },
+    "dist/components/Button.svelte.css": {
+      "bytes": 512,
+      "imports": []
+    },
+    "_snowpack/pkg/svelte.js": {
+      "bytes": 91,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-2a8644aa.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/svelte-mui/src/Ripple.svelte.js": {
+      "bytes": 6962,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-2a8644aa.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Button.svelte.js": {
+      "bytes": 5734,
+      "imports": [
+        {
+          "path": "dist/components/Button.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte-loadable.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte-mui/src/Ripple.svelte.js",
+          "kind": "dynamic-import"
+        }
+      ]
+    },
+    "dist/pages/Home.svelte.js": {
+      "bytes": 2695,
+      "imports": [
+        {
+          "path": "dist/pages/Home.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Button.svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/tinro.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/CreateServiceForm.svelte.css": {
+      "bytes": 677,
+      "imports": []
+    },
+    "_snowpack/pkg/svelte-mui/src.js": {
+      "bytes": 138125,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-2a8644aa.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte-mui/src/Ripple.svelte.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/svelte/store.js": {
+      "bytes": 99,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/index-4bf1acee.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-2a8644aa.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/serviceStore.js": {
+      "bytes": 723,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/svelte/store.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/CreateServiceForm.svelte.js": {
+      "bytes": 8663,
+      "imports": [
+        {
+          "path": "dist/components/CreateServiceForm.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte-mui/src.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/serviceStore.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Button.svelte.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/components/Table.svelte.css": {
+      "bytes": 924,
+      "imports": []
+    },
+    "dist/components/CloseServiceDialog.svelte.css": {
+      "bytes": 127,
+      "imports": []
+    },
+    "dist/components/CloseServiceDialog.svelte.js": {
+      "bytes": 8156,
+      "imports": [
+        {
+          "path": "dist/components/CloseServiceDialog.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte-mui/src.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/serviceStore.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "assets/check-icon.svg.proxy.js": {
+      "bytes": 40,
+      "imports": []
+    },
+    "assets/exit-icon.svg.proxy.js": {
+      "bytes": 39,
+      "imports": []
+    },
+    "dist/components/Table.svelte.js": {
+      "bytes": 12196,
+      "imports": [
+        {
+          "path": "dist/components/Table.svelte.css",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/serviceStore.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Button.svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/CloseServiceDialog.svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "assets/check-icon.svg.proxy.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "assets/exit-icon.svg.proxy.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/pages/Crud.svelte.js": {
+      "bytes": 1499,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/CreateServiceForm.svelte.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/components/Table.svelte.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "dist/App.svelte.js": {
+      "bytes": 3244,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/svelte/internal.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/tinro.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/svelte-loadable.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/pages/Home.svelte.js",
+          "kind": "dynamic-import"
+        },
+        {
+          "path": "dist/pages/Crud.svelte.js",
+          "kind": "dynamic-import"
+        }
+      ]
+    },
+    "dist/index.js": {
+      "bytes": 415,
+      "imports": [
+        {
+          "path": "_snowpack/env.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "dist/App.svelte.js",
+          "kind": "import-statement"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/global.css": {
+      "imports": [],
+      "inputs": {
+        "global.css": {
+          "bytesInOutput": 456
+        }
+      },
+      "bytes": 457
+    },
+    "../~~bundle~~/dist/index.js": {
+      "imports": [],
+      "exports": [
+        "default"
+      ],
+      "inputs": {
+        "_snowpack/pkg/svelte-mui/src/Ripple.svelte.js": {
+          "bytesInOutput": 3934
+        },
+        "dist/pages/Home.svelte.js": {
+          "bytesInOutput": 1137
+        },
+        "dist/pages/Crud.svelte.js": {
+          "bytesInOutput": 400
+        },
+        "_snowpack/env.js": {
+          "bytesInOutput": 100
+        },
+        "_snowpack/pkg/common/index-2a8644aa.js": {
+          "bytesInOutput": 9376
+        },
+        "_snowpack/pkg/svelte/internal.js": {
+          "bytesInOutput": 0
+        },
+        "_snowpack/pkg/common/index-4bf1acee.js": {
+          "bytesInOutput": 427
+        },
+        "_snowpack/pkg/tinro.js": {
+          "bytesInOutput": 5972
+        },
+        "_snowpack/pkg/svelte-loadable.js": {
+          "bytesInOutput": 4125
+        },
+        "dist/App.svelte.js": {
+          "bytesInOutput": 1093
+        },
+        "dist/pages/Home.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/Button.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "_snowpack/pkg/svelte.js": {
+          "bytesInOutput": 0
+        },
+        "dist/components/Button.svelte.js": {
+          "bytesInOutput": 1776
+        },
+        "dist/components/CreateServiceForm.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "_snowpack/pkg/svelte-mui/src.js": {
+          "bytesInOutput": 62579
+        },
+        "_snowpack/pkg/svelte/store.js": {
+          "bytesInOutput": 0
+        },
+        "dist/serviceStore.js": {
+          "bytesInOutput": 272
+        },
+        "dist/components/CreateServiceForm.svelte.js": {
+          "bytesInOutput": 2755
+        },
+        "dist/components/Table.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/CloseServiceDialog.svelte.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/CloseServiceDialog.svelte.js": {
+          "bytesInOutput": 2604
+        },
+        "assets/check-icon.svg.proxy.js": {
+          "bytesInOutput": 32
+        },
+        "assets/exit-icon.svg.proxy.js": {
+          "bytesInOutput": 31
+        },
+        "dist/components/Table.svelte.js": {
+          "bytesInOutput": 3984
+        },
+        "dist/index.js": {
+          "bytesInOutput": 63
+        }
+      },
+      "bytes": 101300
+    },
+    "../~~bundle~~/dist/index.css": {
+      "imports": [],
+      "inputs": {
+        "dist/pages/Home.svelte.css": {
+          "bytesInOutput": 426
+        },
+        "dist/components/Button.svelte.css": {
+          "bytesInOutput": 508
+        },
+        "dist/components/CreateServiceForm.svelte.css": {
+          "bytesInOutput": 672
+        },
+        "dist/components/Table.svelte.css": {
+          "bytesInOutput": 917
+        },
+        "dist/components/CloseServiceDialog.svelte.css": {
+          "bytesInOutput": 126
+        }
+      },
+      "bytes": 2650
+    }
+  }
+}

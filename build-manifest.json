@@ -1,6 +1,6 @@
 {
   "inputs": {
-    "global.css": {
+    "easycarros-challenge/global.css": {
       "bytes": 567,
       "imports": []
     },
@@ -52,11 +52,11 @@
         }
       ]
     },
-    "dist/pages/Home.svelte.css": {
+    "easycarros-challenge/dist/pages/Home.svelte.css": {
       "bytes": 427,
       "imports": []
     },
-    "dist/components/Button.svelte.css": {
+    "easycarros-challenge/dist/components/Button.svelte.css": {
       "bytes": 512,
       "imports": []
     },
@@ -78,11 +78,11 @@
         }
       ]
     },
-    "dist/components/Button.svelte.js": {
-      "bytes": 5734,
+    "easycarros-challenge/dist/components/Button.svelte.js": {
+      "bytes": 5746,
       "imports": [
         {
-          "path": "dist/components/Button.svelte.css",
+          "path": "easycarros-challenge/dist/components/Button.svelte.css",
           "kind": "import-statement"
         },
         {
@@ -103,11 +103,11 @@
         }
       ]
     },
-    "dist/pages/Home.svelte.js": {
-      "bytes": 2695,
+    "easycarros-challenge/dist/pages/Home.svelte.js": {
+      "bytes": 2701,
       "imports": [
         {
-          "path": "dist/pages/Home.svelte.css",
+          "path": "easycarros-challenge/dist/pages/Home.svelte.css",
           "kind": "import-statement"
         },
         {
@@ -115,7 +115,7 @@
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/Button.svelte.js",
+          "path": "easycarros-challenge/dist/components/Button.svelte.js",
           "kind": "import-statement"
         },
         {
@@ -124,7 +124,7 @@
         }
       ]
     },
-    "dist/components/CreateServiceForm.svelte.css": {
+    "easycarros-challenge/dist/components/CreateServiceForm.svelte.css": {
       "bytes": 677,
       "imports": []
     },
@@ -154,8 +154,8 @@
         }
       ]
     },
-    "dist/serviceStore.js": {
-      "bytes": 723,
+    "easycarros-challenge/dist/serviceStore.js": {
+      "bytes": 726,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/store.js",
@@ -163,11 +163,11 @@
         }
       ]
     },
-    "dist/components/CreateServiceForm.svelte.js": {
-      "bytes": 8663,
+    "easycarros-challenge/dist/components/CreateServiceForm.svelte.js": {
+      "bytes": 8672,
       "imports": [
         {
-          "path": "dist/components/CreateServiceForm.svelte.css",
+          "path": "easycarros-challenge/dist/components/CreateServiceForm.svelte.css",
           "kind": "import-statement"
         },
         {
@@ -183,28 +183,28 @@
           "kind": "import-statement"
         },
         {
-          "path": "dist/serviceStore.js",
+          "path": "easycarros-challenge/dist/serviceStore.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/Button.svelte.js",
+          "path": "easycarros-challenge/dist/components/Button.svelte.js",
           "kind": "import-statement"
         }
       ]
     },
-    "dist/components/Table.svelte.css": {
+    "easycarros-challenge/dist/components/Table.svelte.css": {
       "bytes": 924,
       "imports": []
     },
-    "dist/components/CloseServiceDialog.svelte.css": {
+    "easycarros-challenge/dist/components/CloseServiceDialog.svelte.css": {
       "bytes": 127,
       "imports": []
     },
-    "dist/components/CloseServiceDialog.svelte.js": {
-      "bytes": 8156,
+    "easycarros-challenge/dist/components/CloseServiceDialog.svelte.js": {
+      "bytes": 8165,
       "imports": [
         {
-          "path": "dist/components/CloseServiceDialog.svelte.css",
+          "path": "easycarros-challenge/dist/components/CloseServiceDialog.svelte.css",
           "kind": "import-statement"
         },
         {
@@ -220,24 +220,24 @@
           "kind": "import-statement"
         },
         {
-          "path": "dist/serviceStore.js",
+          "path": "easycarros-challenge/dist/serviceStore.js",
           "kind": "import-statement"
         }
       ]
     },
-    "assets/check-icon.svg.proxy.js": {
-      "bytes": 40,
+    "easycarros-challenge/assets/check-icon.svg.proxy.js": {
+      "bytes": 61,
       "imports": []
     },
-    "assets/exit-icon.svg.proxy.js": {
-      "bytes": 39,
+    "easycarros-challenge/assets/exit-icon.svg.proxy.js": {
+      "bytes": 60,
       "imports": []
     },
-    "dist/components/Table.svelte.js": {
-      "bytes": 12196,
+    "easycarros-challenge/dist/components/Table.svelte.js": {
+      "bytes": 12199,
       "imports": [
         {
-          "path": "dist/components/Table.svelte.css",
+          "path": "easycarros-challenge/dist/components/Table.svelte.css",
           "kind": "import-statement"
         },
         {
@@ -245,46 +245,46 @@
           "kind": "import-statement"
         },
         {
-          "path": "dist/serviceStore.js",
+          "path": "easycarros-challenge/dist/serviceStore.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/Button.svelte.js",
+          "path": "easycarros-challenge/dist/components/Button.svelte.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/CloseServiceDialog.svelte.js",
+          "path": "easycarros-challenge/dist/components/CloseServiceDialog.svelte.js",
           "kind": "import-statement"
         },
         {
-          "path": "assets/check-icon.svg.proxy.js",
+          "path": "easycarros-challenge/assets/check-icon.svg.proxy.js",
           "kind": "import-statement"
         },
         {
-          "path": "assets/exit-icon.svg.proxy.js",
+          "path": "easycarros-challenge/assets/exit-icon.svg.proxy.js",
           "kind": "import-statement"
         }
       ]
     },
-    "dist/pages/Crud.svelte.js": {
-      "bytes": 1499,
+    "easycarros-challenge/dist/pages/Crud.svelte.js": {
+      "bytes": 1502,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/CreateServiceForm.svelte.js",
+          "path": "easycarros-challenge/dist/components/CreateServiceForm.svelte.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/components/Table.svelte.js",
+          "path": "easycarros-challenge/dist/components/Table.svelte.js",
           "kind": "import-statement"
         }
       ]
     },
-    "dist/App.svelte.js": {
-      "bytes": 3244,
+    "easycarros-challenge/dist/App.svelte.js": {
+      "bytes": 3253,
       "imports": [
         {
           "path": "_snowpack/pkg/svelte/internal.js",
@@ -299,40 +299,40 @@
           "kind": "import-statement"
         },
         {
-          "path": "dist/pages/Home.svelte.js",
+          "path": "easycarros-challenge/dist/pages/Home.svelte.js",
           "kind": "dynamic-import"
         },
         {
-          "path": "dist/pages/Crud.svelte.js",
+          "path": "easycarros-challenge/dist/pages/Crud.svelte.js",
           "kind": "dynamic-import"
         }
       ]
     },
-    "dist/index.js": {
-      "bytes": 415,
+    "easycarros-challenge/dist/index.js": {
+      "bytes": 418,
       "imports": [
         {
           "path": "_snowpack/env.js",
           "kind": "import-statement"
         },
         {
-          "path": "dist/App.svelte.js",
+          "path": "easycarros-challenge/dist/App.svelte.js",
           "kind": "import-statement"
         }
       ]
     }
   },
   "outputs": {
-    "../~~bundle~~/global.css": {
+    "../~~bundle~~/easycarros-challenge/global.css": {
       "imports": [],
       "inputs": {
-        "global.css": {
+        "easycarros-challenge/global.css": {
           "bytesInOutput": 456
         }
       },
       "bytes": 457
     },
-    "../~~bundle~~/dist/index.js": {
+    "../~~bundle~~/easycarros-challenge/dist/index.js": {
       "imports": [],
       "exports": [
         "default"
@@ -341,10 +341,10 @@
         "_snowpack/pkg/svelte-mui/src/Ripple.svelte.js": {
           "bytesInOutput": 3934
         },
-        "dist/pages/Home.svelte.js": {
+        "easycarros-challenge/dist/pages/Home.svelte.js": {
           "bytesInOutput": 1137
         },
-        "dist/pages/Crud.svelte.js": {
+        "easycarros-challenge/dist/pages/Crud.svelte.js": {
           "bytesInOutput": 400
         },
         "_snowpack/env.js": {
@@ -365,22 +365,22 @@
         "_snowpack/pkg/svelte-loadable.js": {
           "bytesInOutput": 4125
         },
-        "dist/App.svelte.js": {
+        "easycarros-challenge/dist/App.svelte.js": {
           "bytesInOutput": 1093
         },
-        "dist/pages/Home.svelte.css": {
+        "easycarros-challenge/dist/pages/Home.svelte.css": {
           "bytesInOutput": 0
         },
-        "dist/components/Button.svelte.css": {
+        "easycarros-challenge/dist/components/Button.svelte.css": {
           "bytesInOutput": 0
         },
         "_snowpack/pkg/svelte.js": {
           "bytesInOutput": 0
         },
-        "dist/components/Button.svelte.js": {
+        "easycarros-challenge/dist/components/Button.svelte.js": {
           "bytesInOutput": 1776
         },
-        "dist/components/CreateServiceForm.svelte.css": {
+        "easycarros-challenge/dist/components/CreateServiceForm.svelte.css": {
           "bytesInOutput": 0
         },
         "_snowpack/pkg/svelte-mui/src.js": {
@@ -389,52 +389,52 @@
         "_snowpack/pkg/svelte/store.js": {
           "bytesInOutput": 0
         },
-        "dist/serviceStore.js": {
+        "easycarros-challenge/dist/serviceStore.js": {
           "bytesInOutput": 272
         },
-        "dist/components/CreateServiceForm.svelte.js": {
+        "easycarros-challenge/dist/components/CreateServiceForm.svelte.js": {
           "bytesInOutput": 2755
         },
-        "dist/components/Table.svelte.css": {
+        "easycarros-challenge/dist/components/Table.svelte.css": {
           "bytesInOutput": 0
         },
-        "dist/components/CloseServiceDialog.svelte.css": {
+        "easycarros-challenge/dist/components/CloseServiceDialog.svelte.css": {
           "bytesInOutput": 0
         },
-        "dist/components/CloseServiceDialog.svelte.js": {
+        "easycarros-challenge/dist/components/CloseServiceDialog.svelte.js": {
           "bytesInOutput": 2604
         },
-        "assets/check-icon.svg.proxy.js": {
-          "bytesInOutput": 32
+        "easycarros-challenge/assets/check-icon.svg.proxy.js": {
+          "bytesInOutput": 53
         },
-        "assets/exit-icon.svg.proxy.js": {
-          "bytesInOutput": 31
+        "easycarros-challenge/assets/exit-icon.svg.proxy.js": {
+          "bytesInOutput": 52
         },
-        "dist/components/Table.svelte.js": {
+        "easycarros-challenge/dist/components/Table.svelte.js": {
           "bytesInOutput": 3984
         },
-        "dist/index.js": {
+        "easycarros-challenge/dist/index.js": {
           "bytesInOutput": 63
         }
       },
-      "bytes": 101300
+      "bytes": 101342
     },
-    "../~~bundle~~/dist/index.css": {
+    "../~~bundle~~/easycarros-challenge/dist/index.css": {
       "imports": [],
       "inputs": {
-        "dist/pages/Home.svelte.css": {
+        "easycarros-challenge/dist/pages/Home.svelte.css": {
           "bytesInOutput": 426
         },
-        "dist/components/Button.svelte.css": {
+        "easycarros-challenge/dist/components/Button.svelte.css": {
           "bytesInOutput": 508
         },
-        "dist/components/CreateServiceForm.svelte.css": {
+        "easycarros-challenge/dist/components/CreateServiceForm.svelte.css": {
           "bytesInOutput": 672
         },
-        "dist/components/Table.svelte.css": {
+        "easycarros-challenge/dist/components/Table.svelte.css": {
           "bytesInOutput": 917
         },
-        "dist/components/CloseServiceDialog.svelte.css": {
+        "easycarros-challenge/dist/components/CloseServiceDialog.svelte.css": {
           "bytesInOutput": 126
         }
       },

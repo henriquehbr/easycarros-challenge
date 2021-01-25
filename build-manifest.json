@@ -225,16 +225,16 @@
         }
       ]
     },
-    "assets/check-icon.svg.proxy.js": {
-      "bytes": 40,
+    "check-icon.svg.proxy.js": {
+      "bytes": 33,
       "imports": []
     },
-    "assets/exit-icon.svg.proxy.js": {
-      "bytes": 39,
+    "exit-icon.svg.proxy.js": {
+      "bytes": 32,
       "imports": []
     },
     "dist/components/Table.svelte.js": {
-      "bytes": 12196,
+      "bytes": 12182,
       "imports": [
         {
           "path": "dist/components/Table.svelte.css",
@@ -257,11 +257,11 @@
           "kind": "import-statement"
         },
         {
-          "path": "assets/check-icon.svg.proxy.js",
+          "path": "check-icon.svg.proxy.js",
           "kind": "import-statement"
         },
         {
-          "path": "assets/exit-icon.svg.proxy.js",
+          "path": "exit-icon.svg.proxy.js",
           "kind": "import-statement"
         }
       ]
@@ -404,11 +404,11 @@
         "dist/components/CloseServiceDialog.svelte.js": {
           "bytesInOutput": 2604
         },
-        "assets/check-icon.svg.proxy.js": {
-          "bytesInOutput": 32
+        "check-icon.svg.proxy.js": {
+          "bytesInOutput": 25
         },
-        "assets/exit-icon.svg.proxy.js": {
-          "bytesInOutput": 31
+        "exit-icon.svg.proxy.js": {
+          "bytesInOutput": 24
         },
         "dist/components/Table.svelte.js": {
           "bytesInOutput": 3984
@@ -417,7 +417,7 @@
           "bytesInOutput": 63
         }
       },
-      "bytes": 101300
+      "bytes": 101286
     },
     "../~~bundle~~/dist/index.css": {
       "imports": [],
